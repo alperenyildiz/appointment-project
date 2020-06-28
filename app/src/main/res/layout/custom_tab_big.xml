@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_text_big"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:textSize="18dp"
+    android:textColor="@drawable/custom_tab2"
+    android:fontFamily="@font/athiti_light"
+    >
+
+</TextView>

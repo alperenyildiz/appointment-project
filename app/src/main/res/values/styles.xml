@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="radiusfull">
+        <item name="android:background">
+            @drawable/radiusfull
+        </item>
+    </style>
+
+    <style name="login_button">
+        <item name="android:background">
+            @drawable/login_button
+        </item>
+    </style>
+
+    <style name="register_button">
+        <item name="android:background">
+            @drawable/register_button
+        </item>
+    </style>
+
+    <style name="Login">
+        <item name="android:background">
+            @drawable/loginback
+        </item>
+    </style>
+
+    <style name="next_previous">
+        <item name="android:background">
+            @drawable/next_previous_button
+        </item>
+    </style>
+
+    <style name="next_previous_border">
+        <item name="android:background">
+            @drawable/next_previous_border
+        </item>
+    </style>
+
+    <style name="my_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#c0392b</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:onClick">dialogShow</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+</resources>

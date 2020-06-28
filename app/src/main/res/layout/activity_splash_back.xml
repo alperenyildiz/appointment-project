@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashBackActivity"
+    android:id="@+id/splash_back_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <yanzhikai.textpath.SyncTextPathView
+            android:id="@+id/baslik_first"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:duration="5000"
+            app:showPainter="true"
+            app:text="KUAFÖR"
+            app:textInCenter="true"
+            app:pathStrokeColor="@color/Black"
+            app:paintStrokeColor="@color/Black"
+
+            />
+
+        <yanzhikai.textpath.SyncTextPathView
+            android:id="@+id/baslik"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:duration="5000"
+            app:showPainter="true"
+            app:text="TASARIM"
+            app:textInCenter="true"
+            app:pathStrokeColor="@color/Basket_Ball_Orange"
+            app:paintStrokeColor="@color/Basket_Ball_Orange"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <com.varunest.loader.TheGlowingLoader
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:theglowingloader_line_1_color="@color/Purple"
+        app:theglowingloader_line_2_color="@color/Basket_Ball_Orange"
+        app:theglowingloader_line_stroke_width="36"
+        android:outlineAmbientShadowColor="@color/Gray_Goose"
+        app:theglowingloader_ripple_color="@color/BlackGhost"
+        />
+
+</RelativeLayout>

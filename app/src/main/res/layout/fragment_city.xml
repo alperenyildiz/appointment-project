@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CityFragment"
+    android:orientation="vertical">
+
+
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/spinner_sehir"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:smsp_floatingLabelColor="@color/Black"
+        app:smsp_floatingLabelText="Şehir"
+        app:smsp_hintSize="13dp"
+        app:smsp_hint="Şehir Seçiniz"
+        app:smsp_hintColor="@color/BlackGhost"
+        app:smsp_multilineError="false"
+        app:smsp_arrowSize="18dp"
+        android:layout_gravity="center"
+        app:smsp_arrowColor="@color/BlackGhost"
+        app:smsp_selectedItemListColor="@color/Dark_Sea_Green"
+        android:spinnerMode="dialog"
+        app:smsp_underlineColor="@color/BlackGhost"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        app:smsp_isSearchable="true"
+        app:smsp_enableSearchHeader="false"
+        app:smsp_searchHint="Şehir Ara..."
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_kayit_ol"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="KAYIT OL"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:fontFamily="@font/openbold"
+            style="@style/register_button">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

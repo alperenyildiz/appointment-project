@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".LoginFragment"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <com.zigis.materialtextfield.MaterialTextField
+            android:id="@+id/login_email"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Email"
+            android:fontFamily="@font/ralewaylight"
+            app:activeHintColor="@color/Black"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/Black_Cat"
+            android:layout_marginTop="25dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Black"
+            app:defaultUnderlineColor="@color/BlackGhost"
+            app:activeUnderlineColor="@color/Black"
+            android:drawableStart="@drawable/mail"
+            >
+
+        </com.zigis.materialtextfield.MaterialTextField>
+
+
+        <com.zigis.materialtextfield.MaterialTextField
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/ralewaylight"
+            android:layout_height="0dp"
+            android:hint="Parola"
+            android:textColorHint="@color/Black_Cat"
+            android:textColor="@color/Black"
+            android:drawablePadding="15dp"
+            app:activeHintColor="@color/Black"
+            android:inputType="textPassword"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            app:isClearEnabled="false"
+            app:defaultUnderlineColor="@color/BlackGhost"
+            app:activeUnderlineColor="@color/Black"
+            android:layout_marginTop="25dp"
+            android:id="@+id/login_password"
+            android:drawableRight="@drawable/ic_password_eye"
+            android:drawableLeft="@drawable/password"
+            >
+
+        </com.zigis.materialtextfield.MaterialTextField>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            >
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/openlight"
+                    android:text="Şifremi Unuttum"
+                    android:textColor="@color/black"
+
+                    android:clickable="true">
+
+                </TextView>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:gravity="center"
+            android:id="@+id/login_button"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:text="OTURUM AÇ"
+            android:textColor="@color/White"
+            android:fontFamily="@font/openbold"
+            style="@style/login_button"
+            android:layout_marginBottom="25dp"
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/forgot_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/courier_new"
+                    android:text="Şifresini sıfırlamak istediğiniz hesabın kayıtlı olduğu mail adresini giriniz"
+                    >
+
+                </TextView>
+
+
+                <com.zigis.materialtextfield.MaterialTextField
+                    android:id="@+id/forgot_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    app:activeHintColor="@color/Black"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:drawablePadding="15dp"
+                    android:textColorHint="@color/Black_Cat"
+                    android:layout_marginTop="25dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/athiti_light"
+                    app:defaultUnderlineColor="@color/BlackGhost"
+                    app:activeUnderlineColor="@color/Black"
+                    android:drawableStart="@drawable/mail">
+
+                </com.zigis.materialtextfield.MaterialTextField>
+
+
+
+
+
+                <Button
+                    android:id="@+id/forgot_button"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="200dp"
+                    android:layout_height="0dp"
+                    android:text="Sıfırlama Linki Gönder"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteGhost"
+                    android:fontFamily="@font/courier_new"
+                    style="@style/login_button"
+                    android:layout_marginBottom="25dp"
+                    >
+
+                </Button>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+

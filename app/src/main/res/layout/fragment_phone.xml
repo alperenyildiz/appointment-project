@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PhoneFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefon"
+            android:fontFamily="@font/ralewaylight"
+            android:gravity="left"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:fontFamily="@font/openbold"
+            mask:allowed_chars="1234567890"
+            mask:mask="+90 (# # #)  # # #  # #  # #"
+            android:hint="__________"
+            android:textColorHint="@color/BlackGhost"
+            app:keep_hint="true"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RegisterFragment"
+    android:weightSum="10">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_weight="8"
+        android:id="@+id/view_pager_rec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:id="@+id/previous_layout"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            >
+            <ImageButton
+                android:id="@+id/previous"
+                android:background="@drawable/left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/tab_register"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:stl_customTabTextLayoutId="@layout/custom_tab_circle"
+                app:stl_dividerColor="@color/Transparent"
+                app:stl_dividerThickness="0dp"
+                app:stl_indicatorColor="@color/Smokey_Gray"
+                app:stl_indicatorCornerRadius="4dp"
+                app:stl_indicatorGravity="center"
+                app:stl_indicatorInterpolation="linear"
+                app:stl_indicatorThickness="8dp"
+                app:stl_underlineColor="@color/BlackGhost"
+                app:stl_underlineThickness="0dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/next_layout"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="left">
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:background="@drawable/right_button"
+                android:layout_height="wrap_content"
+                >
+            </ImageButton>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
