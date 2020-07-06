@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("selçukkkk");
+        System.out.println("saasdfgihjıdkofghjklş");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("TEST");
