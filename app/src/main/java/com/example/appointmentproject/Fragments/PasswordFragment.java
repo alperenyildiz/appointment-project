@@ -17,7 +17,7 @@ import com.zigis.materialtextfield.MaterialTextField;
 public class PasswordFragment extends Fragment {
 
     View view;
-    MaterialTextField password,confirm_password;
+    public static MaterialTextField password,confirm_password;
 
 
     @Override

@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
@@ -21,6 +22,7 @@ import com.example.appointmentproject.Fragments.MailFragment;
 import com.example.appointmentproject.Fragments.NameFragment;
 import com.example.appointmentproject.Fragments.PasswordFragment;
 import com.example.appointmentproject.Fragments.PhoneFragment;
+import com.example.appointmentproject.adapters.NonSwipeableViewPager;
 import com.example.appointmentproject.adapters.ViewAdapter;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
@@ -29,7 +31,7 @@ public class RegisterFragment extends Fragment {
 
     View view;
     SmartTabLayout tab_rec;
-    public static ViewPager view_pager_rec;
+    public static NonSwipeableViewPager view_pager_rec;
     ImageButton next ;
     ImageButton previous;
     int sayfa=0;
@@ -51,7 +53,51 @@ public class RegisterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 YoYo.with(Techniques.Shake).playOn(view.findViewById(R.id.next));
-                view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
+                if(view_pager_rec.getCurrentItem()==0){
+                    if(     NameFragment.name.getText().toString().equals("") ||
+                            NameFragment.surname.getText().toString().equals("")){
+                        Toast.makeText(getActivity(),"Boş geçilemez!",Toast.LENGTH_LONG).show();
+                    }else{
+                        view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
+
+                    }
+                }
+                else if(view_pager_rec.getCurrentItem()==1){
+                    if(MailFragment.mail.getText().toString().equals("")){
+                        Toast.makeText(getActivity(),"mail boş geçilemez!",Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
+                    }
+                }
+                else if(view_pager_rec.getCurrentItem()==2){
+                    if(PasswordFragment.password.getText().toString().equals("") || PasswordFragment.confirm_password.getText().toString().equals("")){
+                        Toast.makeText(getActivity(),"şifre boş geçilemez!",Toast.LENGTH_LONG).show();
+                    }else if(!PasswordFragment.password.getText().toString().equals(PasswordFragment.confirm_password.getText().toString())){
+                        Toast.makeText(getActivity(),"şifreler eşleşmiyor",Toast.LENGTH_LONG).show();
+                    }else view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
+
+                }
+                else if(view_pager_rec.getCurrentItem()==3){
+                    if(PhoneFragment.phone.getText().toString().equals("+90 (_ _ _)  _ _ _  _ _  _ _")){
+                        Toast.makeText(getActivity(),"boş geçilemez",Toast.LENGTH_LONG).show();
+                    }
+                    else if(PhoneFragment.phone.getText().toString().trim().charAt(14)=='_'){
+                        Toast.makeText(getActivity(),"istenmeyen format",Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
+                    }
+                }
+                else if(view_pager_rec.getCurrentItem()==4){
+                    if(BirthDateFragment.birth_date.getText().toString().equals("")){
+                        Toast.makeText(getActivity(),"dogum boş geçilemez!",Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
+                    }
+                }
+
                 visibleControl();
             }
         });

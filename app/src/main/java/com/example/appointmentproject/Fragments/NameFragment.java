@@ -15,7 +15,8 @@ import com.zigis.materialtextfield.MaterialTextField;
 
 public class NameFragment extends Fragment {
 
-    MaterialTextField name;
+    public static MaterialTextField name;
+    public static MaterialTextField surname;
     View view;
 
     @Override
@@ -24,6 +25,8 @@ public class NameFragment extends Fragment {
         view=inflater.inflate(R.layout.fragment_name, container, false);
 
         name=view.findViewById(R.id.name);
+        surname=view.findViewById(R.id.surname);
+
 
 
 

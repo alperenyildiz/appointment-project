@@ -30,7 +30,7 @@
     </com.zigis.materialtextfield.MaterialTextField>
 
     <com.zigis.materialtextfield.MaterialTextField
-        android:id="@+id/sur_name"
+        android:id="@+id/surname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_name"

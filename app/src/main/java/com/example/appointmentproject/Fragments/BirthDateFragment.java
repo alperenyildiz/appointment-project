@@ -23,7 +23,7 @@ public class BirthDateFragment extends Fragment {
 
     View view;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
-    MaterialTextField birth_date;
+    public static MaterialTextField birth_date;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

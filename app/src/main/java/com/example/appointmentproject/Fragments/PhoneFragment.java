@@ -15,7 +15,7 @@ import br.com.sapereaude.maskedEditText.MaskedEditText;
 
 public class PhoneFragment extends Fragment {
 
-    MaskedEditText phone;
+    public static MaskedEditText phone;
     View view;
 
 
