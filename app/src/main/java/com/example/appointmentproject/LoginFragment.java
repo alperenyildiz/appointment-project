@@ -69,11 +69,11 @@ public class LoginFragment extends Fragment {
         final NiftyDialogBuilder dialogBuilder= NiftyDialogBuilder.getInstance(getActivity());
         dialogBuilder
                 .withTitle("Şifre Hatırlatma")
-                .withTitleColor("#FFFFFF")
+                .withTitleColor("#000000")
                 .withIcon(R.drawable.help_icon)
-                .withDividerColor("#11000000")
-                .withDialogColor("#F88158")
-                .withMessage("Şifresini sıfırlamak istediğiniz hesabın kayıtlı olduğu mail adresini giriniz..")
+                .withDividerColor("#303030")
+                .withDialogColor("#606060")
+                .withMessage("Şifresini sıfırlamak istediğiniz hesabın kayıtlı olduğu mail adresini giriniz.")
                 .isCancelableOnTouchOutside(false)
                 .isCancelable(false)
                 .setCustomView(R.layout.activity_forgot_password,getActivity())

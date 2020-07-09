@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         app:smsp_floatingLabelColor="@color/Black"
         app:smsp_floatingLabelText="Şehir"
-        app:smsp_hintSize="13dp"
+        app:smsp_hintSize="18dp"
         app:smsp_hint="Şehir Seçiniz"
         app:smsp_hintColor="@color/BlackGhost"
         app:smsp_multilineError="false"

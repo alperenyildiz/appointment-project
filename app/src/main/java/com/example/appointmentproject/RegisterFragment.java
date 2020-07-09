@@ -72,18 +72,18 @@ public class RegisterFragment extends Fragment {
                 }
                 else if(view_pager_rec.getCurrentItem()==2){
                     if(PasswordFragment.password.getText().toString().equals("") || PasswordFragment.confirm_password.getText().toString().equals("")){
-                        Toast.makeText(getActivity(),"şifre boş geçilemez!",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),"Parola boş geçilemez!",Toast.LENGTH_LONG).show();
                     }else if(!PasswordFragment.password.getText().toString().equals(PasswordFragment.confirm_password.getText().toString())){
-                        Toast.makeText(getActivity(),"şifreler eşleşmiyor",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),"Parolalar eşleşmiyor!",Toast.LENGTH_LONG).show();
                     }else view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
 
                 }
                 else if(view_pager_rec.getCurrentItem()==3){
                     if(PhoneFragment.phone.getText().toString().equals("+90 (_ _ _)  _ _ _  _ _  _ _")){
-                        Toast.makeText(getActivity(),"boş geçilemez",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),"Telefon boş geçilemez!",Toast.LENGTH_LONG).show();
                     }
-                    else if(PhoneFragment.phone.getText().toString().trim().charAt(14)=='_'){
-                        Toast.makeText(getActivity(),"istenmeyen format",Toast.LENGTH_LONG).show();
+                    else if(PhoneFragment.phone.getText().toString().charAt(27)=='_'){
+                        Toast.makeText(getActivity(),"Eksik veya hatalı tuşladınız!",Toast.LENGTH_LONG).show();
                     }
                     else{
                         view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);
@@ -91,7 +91,7 @@ public class RegisterFragment extends Fragment {
                 }
                 else if(view_pager_rec.getCurrentItem()==4){
                     if(BirthDateFragment.birth_date.getText().toString().equals("")){
-                        Toast.makeText(getActivity(),"dogum boş geçilemez!",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),"Doğum tarihi boş geçilemez!",Toast.LENGTH_LONG).show();
                     }
                     else{
                         view_pager_rec.setCurrentItem(view_pager_rec.getCurrentItem()+1);

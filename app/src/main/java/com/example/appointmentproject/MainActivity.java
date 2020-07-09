@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         tab_layout=findViewById(R.id.tab_layout);
         view_pager=findViewById(R.id.view_pager);
         ViewAdapter adapter=new ViewAdapter(getSupportFragmentManager());
-        adapter.FragmentEkle(new LoginFragment(),"OTURUM AÇ");
-        adapter.FragmentEkle(new RegisterFragment(),"KAYIT OL");
+        adapter.FragmentEkle(new LoginFragment(),"GİRİŞ YAP");
+        adapter.FragmentEkle(new RegisterFragment(),"KAYDOL");
         view_pager.setAdapter(adapter);
         tab_layout.setViewPager(view_pager);
         ////////////////////////////////////////////
@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
     public  void cikisDialogOlustur(){
         final NiftyDialogBuilder dialogBuilder= NiftyDialogBuilder.getInstance(this);
         dialogBuilder
-                .withTitle("Çıkma Diyaloğu")
-                .withTitleColor("#FFFFFF")
-                .withDividerColor("#11000000")
+                .withTitle("Çıkış")
+                .withTitleColor("#000000")
+                .withDividerColor("#303030")
                 .withMessage("Çıkmak istediğinize emin misiniz?")
-                .withMessageColor("#FFFFFFFF")
-                .withDialogColor("#F88158")
+                .withMessageColor("#FFFFFF")
+                .withDialogColor("#606060")
                 .isCancelableOnTouchOutside(false)
                 .isCancelable(false)
                 .withIcon(R.drawable.exit_icon)

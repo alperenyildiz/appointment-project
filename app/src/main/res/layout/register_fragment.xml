@@ -59,7 +59,7 @@
                 app:stl_customTabTextLayoutId="@layout/custom_tab_circle"
                 app:stl_dividerColor="@color/Transparent"
                 app:stl_dividerThickness="0dp"
-                app:stl_indicatorColor="@color/Smokey_Gray"
+                app:stl_indicatorColor="@color/Dark_Orange"
                 app:stl_indicatorCornerRadius="4dp"
                 app:stl_indicatorGravity="center"
                 app:stl_indicatorInterpolation="linear"

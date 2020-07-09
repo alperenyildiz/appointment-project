@@ -43,7 +43,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_weight="2">
 
     </LinearLayout>
 
@@ -61,16 +61,15 @@
 
 
         <Button
-            android:layout_width="300dp"
+            android:layout_width="256dp"
             android:id="@+id/login_page"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             style="@style/Login"
-            android:fontFamily="@font/courier_new"
+            android:fontFamily="@font/gravity"
             android:text="GİRİŞ YAP"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:textColor="@color/WhiteGhost">
+            android:textSize="18dp"
+            android:textColor="@color/black">
 
         </Button>
 
@@ -84,14 +83,13 @@
         android:gravity="center">
 
         <Button
-            android:layout_width="300dp"
+            android:layout_width="256dp"
             android:id="@+id/register_page"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             style="@style/radiusfull"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:fontFamily="@font/courier_new"
+            android:textSize="18dp"
+            android:fontFamily="@font/gravity"
             android:text="KAYIT OL"
             android:textColor="@color/WhiteGhost">
 

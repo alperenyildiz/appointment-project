@@ -4,7 +4,7 @@ android:color="@color/WhiteGhost" xmlns:android="http://schemas.android.com/apk/
 tools:targetApi="lollipop">
 <item>
     <shape android:shape="rectangle" >
-        <solid android:color="@color/BlackGhost"/>
+        <solid android:color="@color/black"/>
         <corners android:radius="50dp">
         </corners>
     </shape>

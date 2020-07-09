@@ -26,6 +26,6 @@ public class SplashBackActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),SplashActivity.class));
                 finish();
             }
-        },1000);
+        },4000);
     }
 }

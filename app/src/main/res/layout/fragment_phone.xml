@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Telefon"
-            android:fontFamily="@font/ralewaylight"
+            android:fontFamily="@font/gravity"
             android:gravity="left"
             android:textColor="@color/black">
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:fontFamily="@font/openbold"
+            android:fontFamily="@font/gravity"
             mask:allowed_chars="1234567890"
             mask:mask="+90 (# # #)  # # #  # #  # #"
             android:hint="__________"
