@@ -6,6 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.MailFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="48dp"
+        android:paddingLeft="36dp"
+        android:textSize="16dp"
+        android:textColor="@color/White"
+        android:fontFamily="@font/gravity"
+        android:text="Mail adresinizi giriniz.">
+
+    </TextView>
+
     <com.zigis.materialtextfield.MaterialTextField
         android:id="@+id/mail"
         android:layout_width="match_parent"
@@ -13,17 +26,17 @@
         android:hint="Email"
         android:drawableLeft="@drawable/mail"
         android:drawablePadding="16dp"
-        app:activeHintColor="@color/Black"
+        app:activeHintColor="@color/White"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="24dp"
         android:layout_gravity="center"
-        android:textColorHint="@color/Black_Cat"
+        android:textColorHint="@color/White"
         android:inputType="textEmailAddress"
         app:errorColor="@color/Red"
-        android:textColor="@color/Black"
+        android:textColor="@color/White"
         android:fontFamily="@font/gravity"
-        app:defaultUnderlineColor="@color/BlackGhost"
-        app:activeUnderlineColor="@color/Black">
+        app:defaultUnderlineColor="@color/White"
+        app:activeUnderlineColor="@color/White">
 
     </com.zigis.materialtextfield.MaterialTextField>
 </FrameLayout>
