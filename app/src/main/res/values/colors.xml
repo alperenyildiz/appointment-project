@@ -2,6 +2,7 @@
 <resources>
     <color name="WhiteGhost">#BEFFFFFF</color>
     <color name="BlackGhost">#70000000</color>
+    <color name="BlackGhostHigh">#BC000000</color>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#F66400</color>

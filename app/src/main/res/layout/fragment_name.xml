@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.NameFragment"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal">
 
     <com.zigis.materialtextfield.MaterialTextField
         android:id="@+id/name"
@@ -14,17 +14,18 @@
         android:layout_height="wrap_content"
         android:hint="Ad"
         android:layout_gravity="center"
-        app:activeHintColor="@color/Black"
+        app:activeHintColor="@color/White"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="24dp"
-        android:textColorHint="@color/Black"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/White"
         android:inputType="textPersonName"
-        android:textColor="@color/Black"
+        android:textColor="@color/White"
         android:fontFamily="@font/gravity"
-        app:defaultUnderlineColor="@color/BlackGhost"
+        app:defaultUnderlineColor="@color/White"
         android:drawableLeft="@drawable/ic_name"
         android:drawablePadding="16dp"
-        app:activeUnderlineColor="@color/Black"
+        app:activeUnderlineColor="@color/White"
         >
 
     </com.zigis.materialtextfield.MaterialTextField>
@@ -36,17 +37,17 @@
         android:drawableLeft="@drawable/ic_name"
         android:drawablePadding="16dp"
         android:hint="Soyad"
-        app:activeHintColor="@color/Black"
+        app:activeHintColor="@color/White"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="24dp"
         android:layout_gravity="center"
-        android:layout_marginTop="24dp"
-        android:textColorHint="@color/Black"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/White"
         android:inputType="textPersonName"
-        android:textColor="@color/Black"
+        android:textColor="@color/White"
         android:fontFamily="@font/gravity"
-        app:defaultUnderlineColor="@color/BlackGhost"
-        app:activeUnderlineColor="@color/Black">
+        app:defaultUnderlineColor="@color/White"
+        app:activeUnderlineColor="@color/White">
 
     </com.zigis.materialtextfield.MaterialTextField>
 

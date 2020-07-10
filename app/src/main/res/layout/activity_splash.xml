@@ -67,7 +67,7 @@
             android:layout_gravity="center"
             style="@style/Login"
             android:fontFamily="@font/gravity"
-            android:text="GİRİŞ YAP"
+            android:text="OTURUM AÇ"
             android:textSize="18dp"
             android:textColor="@color/black">
 
@@ -90,7 +90,7 @@
             style="@style/radiusfull"
             android:textSize="18dp"
             android:fontFamily="@font/gravity"
-            android:text="KAYIT OL"
+            android:text="ÜCRETSİZ KAYDOL"
             android:textColor="@color/WhiteGhost">
 
         </Button>

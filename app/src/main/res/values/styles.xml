@@ -44,6 +44,11 @@
             @drawable/next_previous_border
         </item>
     </style>
+    <style name="border">
+        <item name="android:background">
+            @drawable/border
+        </item>
+    </style>
 
     <style name="my_btn">
         <item name="android:layout_width">match_parent</item>
