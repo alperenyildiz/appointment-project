@@ -42,7 +42,7 @@ public class SplashActivity extends AppCompatActivity {
         login_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent main=new Intent(SplashActivity.this,MainActivity.class);
+                Intent main=new Intent(SplashActivity.this,HomeActivity.class);
                 main.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 main.putExtra("gelen","login");
                 startActivity(main);
