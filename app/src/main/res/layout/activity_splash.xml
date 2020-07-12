@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".SplashActivity"
     >
 
     <com.flaviofaria.kenburnsview.KenBurnsView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/splash_back"/>
+
+        android:src="@drawable/new_splash"/>
 
 
     <LinearLayout
@@ -24,24 +26,67 @@
 
 
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
+        android:background="@color/BlackGhostHigh"
+        android:gravity="right"
         android:layout_height="0dp"
         android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iconsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:layout_gravity="right"
+                android:layout_marginVertical="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_setting" />
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:background="@color/BlackGhostHigh"
+        android:orientation="vertical"
         android:layout_height="0dp"
         android:layout_weight="3">
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginVertical="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/logo_deneme_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H O Ş G E L D İ N İ Z"
+            android:layout_gravity="center"
+            android:fontFamily="@font/athiti_light"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="32dp"></TextView>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:background="@color/BlackGhostHigh"
         android:layout_height="0dp"
         android:layout_weight="2">
 
@@ -57,6 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:background="@color/BlackGhostHigh"
         android:gravity="center">
 
 
@@ -66,10 +112,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             style="@style/Login"
+            android:textStyle="bold"
             android:fontFamily="@font/gravity"
             android:text="OTURUM AÇ"
             android:textSize="18dp"
-            android:textColor="@color/black">
+            android:textColor="@color/White">
 
         </Button>
 
@@ -80,6 +127,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:background="@color/BlackGhostHigh"
         android:gravity="center">
 
         <Button
@@ -89,13 +138,22 @@
             android:layout_height="wrap_content"
             style="@style/radiusfull"
             android:textSize="18dp"
+            android:textStyle="bold"
             android:fontFamily="@font/gravity"
             android:text="ÜCRETSİZ KAYDOL"
-            android:textColor="@color/WhiteGhost">
+            android:textColor="@color/Yeni2">
 
         </Button>
 
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/BlackGhostHigh">
+
+        </LinearLayout>
 
     </LinearLayout>
 

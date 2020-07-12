@@ -6,7 +6,7 @@
     </corners>
     <stroke
         android:width="2dp"
-        android:color="#FFFFFF">
+        android:color="#0A2E7A">
     </stroke>
     <solid android:color="@color/Transparent"></solid>
 

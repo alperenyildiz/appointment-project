@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 ///////////////////////////////////////////////////////
 
         layout=findViewById(R.id.layout);
-        tab_layout.setSelectedIndicatorColors(Color.parseColor("#4E387E"),Color.parseColor("#F88158"));
+        tab_layout.setSelectedIndicatorColors(Color.parseColor("#0A2E7A"),Color.parseColor("#FFFFFF"));
 
         Animation animation=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.downtoup);
         layout.startAnimation(animation);

@@ -16,7 +16,7 @@
 
     <LinearLayout
         android:layout_weight="9"
-        android:background="@color/BlackGhostHigh"
+        android:background="@color/BlackGhost"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <VideoView

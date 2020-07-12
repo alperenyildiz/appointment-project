@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashBackActivity"
+    android:background="@drawable/gradient"
     android:id="@+id/splash_back_layout">
 
     <LinearLayout
@@ -16,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="5">
 
         </LinearLayout>
 
@@ -25,9 +26,10 @@
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:duration="5000"
+            app:duration="3000"
             app:showPainter="true"
-            app:text="KUAFÖR"
+            app:text="BENİM"
+            app:textSize="48dp"
             app:textInCenter="true"
             app:pathStrokeColor="@color/Black"
             app:paintStrokeColor="@color/Black"
@@ -39,12 +41,13 @@
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:duration="5000"
+            app:duration="3000"
+            app:textSize="48dp"
             app:showPainter="true"
-            app:text="TASARIM"
+            app:text="KUAFÖRÜM"
             app:textInCenter="true"
-            app:pathStrokeColor="@color/Basket_Ball_Orange"
-            app:paintStrokeColor="@color/Basket_Ball_Orange"
+            app:pathStrokeColor="@color/White"
+            app:paintStrokeColor="@color/White"
 
             />
 
@@ -55,8 +58,8 @@
     <com.varunest.loader.TheGlowingLoader
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:theglowingloader_line_1_color="@color/Purple"
-        app:theglowingloader_line_2_color="@color/Basket_Ball_Orange"
+        app:theglowingloader_line_1_color="@color/WhiteGhost"
+        app:theglowingloader_line_2_color="@color/White"
         app:theglowingloader_line_stroke_width="36"
         android:outlineAmbientShadowColor="@color/Gray_Goose"
         app:theglowingloader_ripple_color="@color/BlackGhost"

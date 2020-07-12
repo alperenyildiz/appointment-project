@@ -71,6 +71,8 @@
             android:layout_width="196dp"
             android:layout_height="0dp"
             android:text="OTURUM AÇ"
+            android:textSize="16dp"
+            android:textStyle="bold"
             android:textColor="@color/White"
             android:fontFamily="@font/gravity"
             style="@style/login_button"
@@ -90,6 +92,7 @@
             android:layout_height="0dp"
             android:layout_margin="16dp"
             android:fontFamily="@font/gravity"
+            android:textStyle="bold"
             android:text="PAROLANI MI UNUTTUN?"
             android:textColor="@color/White"
 
