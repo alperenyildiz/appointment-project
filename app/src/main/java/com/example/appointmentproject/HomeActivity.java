@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 
-import com.fevziomurtekin.searchview.SearchView;
+import com.example.appointmentproject.adapters.SearchView;
 
 public class HomeActivity extends AppCompatActivity implements TextWatcher {
 

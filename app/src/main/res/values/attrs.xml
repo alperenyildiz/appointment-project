@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="searchView">
+        <attr name="searchhint" format="string"/>
+        <attr name="animationtime" format="integer"/>
+        <attr name="searchsize" format="float"/>
+        <attr name="resultsize" format="float"/>
+        <attr name="searchtextcolor" format="integer"/>
+        <attr name="resulttextcolor" format="integer" />
+    </declare-styleable>
+</resources>

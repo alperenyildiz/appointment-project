@@ -334,6 +334,14 @@
     <color name="Lavender">#E3E4FA</color>
     <color name="Pearl">#FDEEF4</color>
     <color name="SeaShell">#FFF5EE</color>
+    <color name="textcolor">#3F51B5</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="grey">#EEEEEE</color>
+
+    <color name="black">#000000</color>
+
+    <color name="dgrey">#cccccc</color>
     <color name="Milk_White">#FEFCFF</color>
     <color name="White">#FFFFFF</color>
     <color name="Transparent">#00000000</color>
