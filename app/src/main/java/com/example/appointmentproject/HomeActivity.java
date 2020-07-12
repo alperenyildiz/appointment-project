@@ -5,42 +5,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import com.example.appointmentproject.adapters.SearchView;
+import com.mancj.materialsearchbar.MaterialSearchBar;
+import com.zigis.materialtextfield.MaterialTextField;
 
-public class HomeActivity extends AppCompatActivity implements TextWatcher {
 
-    SearchView searchView;
+public class HomeActivity extends AppCompatActivity{
+
+    EditText search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        searchView=findViewById(R.id.search);
+        search=findViewById(R.id.search);
 
-        searchView      = new SearchView(getApplicationContext());
-        searchView      . setSearchView_hint("Search");
-        searchView      . setSearchView_textSize(14f);
-        searchView      . setSearchView_animationTime(250);
-        searchView      . setSearchView_textColor(getResources().getColor(R.color.Blue_Ivy));
-        searchView      . setResult_textSize(14f);
-        searchView      . setResult_textColor(getResources().getColor(R.color.Blue_Ivy));
+
 
     }
 
 
-    @Override
-    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
     }
-
-    @Override
-    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-    }
-
-    @Override
-    public void afterTextChanged(Editable editable) {
-
-    }
-}

@@ -14,7 +14,11 @@
             @drawable/radiusfull
         </item>
     </style>
-
+    <style name="shadow">
+        <item name="android:background">
+            @drawable/shadow
+        </item>
+    </style>
 
     <style name="login_button">
         <item name="android:background">
@@ -25,6 +29,12 @@
     <style name="register_button">
         <item name="android:background">
             @drawable/register_button
+        </item>
+    </style>
+
+    <style name="corner">
+        <item name="android:background">
+            @drawable/corner
         </item>
     </style>
 
